@@ -410,7 +410,7 @@ class Validator {
 	 * @return bool
 	 */
 	protected function validate_math_answer( $name, $value, $parameters ) {
-		$operands = json_decode( $_POST['security'] );
+		$operands = json_decode( esc_attr( $_POST['security'] ) );
 		if ( intval( $value ) === $operands[0] + $operands[1] ) {
 			return true;
 		}
