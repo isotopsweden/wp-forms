@@ -401,6 +401,24 @@ class Validator {
 	}
 
 	/**
+	 * Validate that the submitted form math value is equal to the real value.
+	 *
+	 * @param  string $name
+	 * @param  mixed  $value
+	 * @param  array  $parameters
+	 *
+	 * @return bool
+	 */
+	protected function validate_math_answer( $name, $value, $parameters ) {
+		$operands = json_decode( $_POST['security'] );
+		if ( intval( $value ) === $operands[0] + $operands[1] ) {
+			return true;
+		}
+
+		return false;
+	}
+
+	/**
 	 * Validate rule.
 	 *
 	 * @param  string $rule
