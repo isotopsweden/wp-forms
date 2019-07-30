@@ -1,9 +1,9 @@
 {
-  "name": "frozzare/wp-forms",
+  "name": "isotopsweden/wp-forms",
   "type": "wordpress-plugin",
   "license": "MIT",
   "description": "Create forms in using code in WordPress",
-  "homepage": "https://github.com/frozzare/wp-forms",
+  "homepage": "https://github.com/isotopsweden/wp-forms",
   "authors": [
     {
       "name": "Fredrik Forsmo",
