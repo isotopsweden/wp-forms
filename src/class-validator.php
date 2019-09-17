@@ -374,8 +374,10 @@ class Validator {
 			if ( ! empty ( $result['success'] ) ) {
 				$valid = true;
 			}
+			if ( ! empty ( $result['score']) && $result['score'] > 0.5) {
+				$valid = true;
+			}
 		}
-
 		return $valid;
 	}
 
